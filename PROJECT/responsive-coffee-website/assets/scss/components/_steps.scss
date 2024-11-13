@@ -1,0 +1,89 @@
+/*=============== STEPS ===============*/
+.steps{
+    background-color: var(--white-color);
+    position: relative;
+    
+    &__bg{
+        background-color: var(--first-color);
+        border-radius: var(--border-section);
+    }
+    
+    &__container{
+        padding-top: 2rem;
+    }
+    
+    & .section__title,
+    &__description{
+        color: var(--white-color);
+    }
+    &__content{
+        display: grid;
+        row-gap: 4rem;
+        position: relative;
+    }
+    &__card{
+        width: 250px;
+        z-index: 10;
+    }
+    &__circle{
+        width: 150px;
+        height: 150px;
+        background-color: var(--first-color-light);
+        border-radius: 50%;
+        box-shadow: 0 8px 32px hsla(12, 32%, 8%, .3);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 1.5rem;
+    }
+    &__img{
+        width: 120px;
+        filter: drop-shadow(0 4px 16px hsl(12, 32%, 16%));
+        transition: transform .3s;
+
+        &:hover{
+            transform: translateY(-.35rem);
+        }
+    }
+    &__subcircle{
+        width: 50px;
+        height: 50px;
+        background-color: var(--second-color);
+        position: absolute;
+        top: -.75rem;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        font-size: var(--h1-font-size);
+        font-weight: var(--font-semi-bold);
+        color: var(--first-color);
+        outline: 10px solid var(--first-color);
+    }
+    &__card-move,
+    &__card-move .steps__circle{
+        margin-left: auto;
+    }
+    &__card-move .steps__description{
+        text-align: right;
+    }
+    &__border{
+        position: absolute;
+        left: 3rem;
+        right: 0;
+        top: 7.5rem;
+        margin: 0 auto;
+    }
+    &__bg-img{
+        position: absolute;
+        top: 14rem;
+        left: 0;
+        width: 100%;
+        height: 70%;
+        object-fit: cover;
+        object-position: -132px;
+        opacity: .15;
+    }
+}

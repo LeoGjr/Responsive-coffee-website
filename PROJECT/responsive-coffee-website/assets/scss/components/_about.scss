@@ -1,0 +1,20 @@
+/*=============== ABOUT ===============*/
+.about{
+    background-color: var(--first-color);
+
+    &__bg{
+        background-color: var(--white-color);
+        border-radius: var(--border-section);
+    }
+    &__container{
+        row-gap: 3rem;
+    }
+    &__data{
+        text-align: center;
+    }
+    &__img{
+        width: 320px;
+        border-radius: 1rem;
+        justify-self: center;
+    }
+}
